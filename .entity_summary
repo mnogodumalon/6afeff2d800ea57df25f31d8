@@ -51,7 +51,7 @@ There is NO `@/config/appIds`, no `@/config/lookupOptions` and no
 createRecordUrl from the service. Note the lowercase `l` in the service path.
 
 - Pfauenbilder (pfauenbilder): titel!^[string/text], foto!^[file], beschreibung^[string/textarea], pfauenart^[lookup/select: blauer_pfau|gruener_pfau|kongopfau|weisser_pfau|andere], motiv^[multiplelookup/checkbox: rad_schlagend|portraet|federn|pfauenhenne|kueken|im_flug], aufnahmedatum[date/date], aufnahmeort[string/text], standort[geo] "Standort auf der Karte", fotograf[string/text], bewertung[lookup/radio: stern_1=1 Stern|stern_2=2 Sterne|stern_3=3 Sterne|stern_4=4 Sterne|stern_5=5 Sterne], favorit[bool] "Lieblingsbild"
-  ≡ 4 records at build time
+  ≡ 1 records at build time
   · motiv: Arbitrary number of selected options out of multiple available ones. The available options are defined in the `lookup_data` attribute of this control. The field value will be a list of keys from this `lookup_data` attribute. Displayed as multiple checkbox fields in HTML pages.
   ◈ pfauenart → choice (5 options, ChoiceGroup) · bewertung → choice (5 options, ChoiceGroup)
   ⚙ getPfauenbilder() · getPfauenbilderEntry(id) · createPfauenbilderEntry(fields) · updatePfauenbilderEntry(id, fields) · deletePfauenbilderEntry(id) · queryPfauenbilder({ filter, orderby, limit, offset, fields }) · countPfauenbilder(filter?)

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "pfauenbild-upload",
+      "component": "PfauenbildUpload",
+      "title": "Pfauenbild hochladen",
+      "endpoints": [
+        {
+          "entity": "pfauenbilder",
+          "op": "create",
+          "fields": [
+            "titel",
+            "foto"
+          ]
+        }
+      ]
+    }
+  ]
+}
