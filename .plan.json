@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "language": "de",
+  "understanding": {
+    "summary": "Du bekommst eine Bildersammlung für Pfauen. Jedes Bild hat einen Titel, ein Foto, eine Beschreibung, die Pfauenart, ein oder mehrere Motive, Aufnahmedatum, Aufnahmeort, Standort auf der Karte, den Fotografen, eine Bewertung von 1 bis 5 Sternen und die Markierung als Lieblingsbild. Bilder werden über die Listenseite durchsucht, sortiert und gefiltert. Alles läuft über die Standardformulare der Plattform, daher sind keine eigenen Abläufe nötig.",
+    "outside_users": [],
+    "roles": [
+      "Galerie-Betreuer"
+    ],
+    "main_tasks": [
+      "Pfauenbilder erfassen",
+      "Bilder nach Art, Motiv oder Bewertung finden",
+      "Lieblingsbilder markieren"
+    ],
+    "platform_roles": [
+      {
+        "persona": "Galerie-Betreuer",
+        "role": "administrator",
+        "apps": [
+          "pfauenbilder"
+        ]
+      }
+    ],
+    "wish_kind": "plain",
+    "wish_signals": []
+  },
+  "flows": [],
+  "public_pages": [],
+  "tools": [],
+  "covered_by_platform": [
+    {
+      "wish": "Bilder erfassen, ändern und löschen",
+      "feature": "record_form"
+    },
+    {
+      "wish": "Bilder ansehen, durchsuchen und sortieren",
+      "feature": "list_page"
+    },
+    {
+      "wish": "Nach Pfauenart, Motiv oder Bewertung filtern",
+      "feature": "search_filter"
+    },
+    {
+      "wish": "Übersicht, wie viele Bilder je Pfauenart oder Bewertung",
+      "feature": "distribution_view"
+    }
+  ],
+  "ownership": {},
+  "dashboard": {
+    "focus": [
+      "Anzahl Pfauenbilder",
+      "Lieblingsbilder",
+      "Bilder je Pfauenart"
+    ],
+    "hints": [
+      "Neueste Bilder zuerst zeigen",
+      "Lieblingsbilder hervorheben"
+    ],
+    "writes": [
+      {
+        "entity": "pfauenbilder",
+        "fields": [
+          "favorit"
+        ],
+        "how": "button"
+      }
+    ],
+    "wishes": []
+  }
+}

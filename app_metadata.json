@@ -1,0 +1,340 @@
+{
+  "appgroup_id": "6afeff2d800ea57df25f31d8",
+  "appgroup_name": "Pfauen-Galerie",
+  "apps": {
+    "pfauenbilder": {
+      "app_id": "6afeff1756e54b4bd3bb6893",
+      "name": "Pfauenbilder",
+      "main": false,
+      "controls": {
+        "titel": {
+          "kind": "textcontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6afeff1756e54b4bd3bb6893/controls/titel",
+          "identifier": "titel",
+          "label": "Titel",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": true,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": null,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "foto": {
+          "kind": "filecontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6afeff1756e54b4bd3bb6893/controls/foto",
+          "identifier": "foto",
+          "label": "Foto",
+          "type": "file",
+          "subtype": null,
+          "fulltype": "file",
+          "description": "An uploaded file (or `null`/`None`).\n\nThe field value will be the URL to download the file in the form `https://my.living-apps.de/files/6afeff1756e54b4bd3bb6893/data/<record-id>/<control-identifier>/<internal-id>` (or `null`/`None`).",
+          "required": true,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": null,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "beschreibung": {
+          "kind": "textareacontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6afeff1756e54b4bd3bb6893/controls/beschreibung",
+          "identifier": "beschreibung",
+          "label": "Beschreibung",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": false,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "pfauenart": {
+          "kind": "lookupselectcontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6afeff1756e54b4bd3bb6893/controls/pfauenart",
+          "identifier": "pfauenart",
+          "label": "Pfauenart",
+          "type": "lookup",
+          "subtype": "select",
+          "fulltype": "lookup/select",
+          "description": "One selected option of multiple available options (or `null`/`None`).\n\nThe available options are defined in the `lookup_data` attribute of this control.\n\nThe field value will be the key in this `lookup_data` attribute (or `null`/`None`).\n\nDisplayed as single-select field in HTML pages.",
+          "required": false,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "translations": null,
+          "lookup_data": {
+            "blauer_pfau": "Blauer Pfau",
+            "gruener_pfau": "Grüner Pfau",
+            "kongopfau": "Kongopfau",
+            "weisser_pfau": "Weißer Pfau",
+            "andere": "Andere"
+          },
+          "lookup_items": {
+            "blauer_pfau": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Blauer Pfau",
+              "translations": null
+            },
+            "gruener_pfau": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Grüner Pfau",
+              "translations": null
+            },
+            "kongopfau": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Kongopfau",
+              "translations": null
+            },
+            "weisser_pfau": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Weißer Pfau",
+              "translations": null
+            },
+            "andere": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Andere",
+              "translations": null
+            }
+          }
+        },
+        "motiv": {
+          "kind": "multiplecheckboxlookupcontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6afeff1756e54b4bd3bb6893/controls/motiv",
+          "identifier": "motiv",
+          "label": "Motiv",
+          "type": "multiplelookup",
+          "subtype": "checkbox",
+          "fulltype": "multiplelookup/checkbox",
+          "description": "Arbitrary number of selected options out of multiple available ones.\n\nThe available options are defined in the `lookup_data` attribute of this control.\n\nThe field value will be a list of keys from this `lookup_data` attribute.\n\nDisplayed as multiple checkbox fields in HTML pages.",
+          "required": false,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "translations": null,
+          "lookup_data": {
+            "rad_schlagend": "Rad schlagend",
+            "portraet": "Porträt",
+            "federn": "Federn",
+            "pfauenhenne": "Pfauenhenne",
+            "kueken": "Küken",
+            "im_flug": "Im Flug"
+          },
+          "lookup_items": {
+            "rad_schlagend": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Rad schlagend",
+              "translations": null
+            },
+            "portraet": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Porträt",
+              "translations": null
+            },
+            "federn": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Federn",
+              "translations": null
+            },
+            "pfauenhenne": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Pfauenhenne",
+              "translations": null
+            },
+            "kueken": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Küken",
+              "translations": null
+            },
+            "im_flug": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "Im Flug",
+              "translations": null
+            }
+          }
+        },
+        "aufnahmedatum": {
+          "kind": "datecontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6afeff1756e54b4bd3bb6893/controls/aufnahmedatum",
+          "identifier": "aufnahmedatum",
+          "label": "Aufnahmedatum",
+          "type": "date",
+          "subtype": "date",
+          "fulltype": "date/date",
+          "description": "A calendar date consisting of year, month and day (or `null`/`None`)\n\nThe field value will be a string in the format `<YYYY>-<MM>-<DD>` (or `null`/`None`).\n\nFor example: `2000-02-29`.\n\nFor `POST`/`PUT`/`PATCH` requests the REST API uses a liberal parsing approach so that strings like `2026`, `February 29, 2000 12:34 MEST`, `letztes Jahr` etc. will be accepted as value date values. However this runs the risk of parsing ambiguous values incorrectly. To ensure reliable parsing it is best to use the canonical format specified above.",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "aufnahmeort": {
+          "kind": "textcontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6afeff1756e54b4bd3bb6893/controls/aufnahmeort",
+          "identifier": "aufnahmeort",
+          "label": "Aufnahmeort",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "standort": {
+          "kind": "geocontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6afeff1756e54b4bd3bb6893/controls/standort",
+          "identifier": "standort",
+          "label": "Standort auf der Karte",
+          "type": "geo",
+          "subtype": null,
+          "fulltype": "geo",
+          "description": "A geographical location consisting of latitude, longitude and additional information (or `null`/`None`).\n\nThe field value will be an object with the keys `lat` (latitude as decimal degrees),\n`long` (longitude as decimal degrees) and `info` (additional information as a string).\n\nFor example: `{\"lat\": 51.313056, \"long\": -0.601944, \"info\": \"Woking, Woking Borough, Surrey, England\"}`.",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "fotograf": {
+          "kind": "textcontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6afeff1756e54b4bd3bb6893/controls/fotograf",
+          "identifier": "fotograf",
+          "label": "Fotograf",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null
+        },
+        "bewertung": {
+          "kind": "lookupradiocontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6afeff1756e54b4bd3bb6893/controls/bewertung",
+          "identifier": "bewertung",
+          "label": "Bewertung",
+          "type": "lookup",
+          "subtype": "radio",
+          "fulltype": "lookup/radio",
+          "description": "One selected option of multiple available options (or `null`/`None`).\n\nThe available options are defined in the `lookup_data` attribute of this control.\n\nThe field value will be the key in this `lookup_data` attribute (or `null`/`None`).\n\nDisplayed as radio button fields in HTML pages.",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null,
+          "lookup_data": {
+            "stern_1": "1 Stern",
+            "stern_2": "2 Sterne",
+            "stern_3": "3 Sterne",
+            "stern_4": "4 Sterne",
+            "stern_5": "5 Sterne"
+          },
+          "lookup_items": {
+            "stern_1": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "1 Stern",
+              "translations": null
+            },
+            "stern_2": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "2 Sterne",
+              "translations": null
+            },
+            "stern_3": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "3 Sterne",
+              "translations": null
+            },
+            "stern_4": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "4 Sterne",
+              "translations": null
+            },
+            "stern_5": {
+              "kind": "lookupitem",
+              "url": null,
+              "label": "5 Sterne",
+              "translations": null
+            }
+          }
+        },
+        "favorit": {
+          "kind": "boolcontrol",
+          "url": "https://my.living-apps.de/rest/v1/apps/6afeff1756e54b4bd3bb6893/controls/favorit",
+          "identifier": "favorit",
+          "label": "Lieblingsbild",
+          "type": "bool",
+          "subtype": null,
+          "fulltype": "bool",
+          "description": "A boolean value, i.e. `true` or `false` (or `null`/`None`).",
+          "required": false,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": null,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "translations": null
+        }
+      }
+    }
+  },
+  "metadata": {
+    "apps_list": [
+      "Pfauenbilder"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "pages": {
+    "en": {
+      "5 Sterne": "5 stars",
+      "Alle Bilder sind bewertet.": "All images are rated.",
+      "Art offen": "Species open",
+      "Bewerten": "Rate",
+      "Bilder je Pfauenart": "Images per peacock species",
+      "Deine Pfauen-Galerie ist noch leer.": "Your Pfauen-Galerie is still empty.",
+      "Erstes Pfauenbild erfassen": "Add first peacock image",
+      "Keine Bilder für diese Auswahl.": "No images for this selection.",
+      "Lieblingsbild umschalten": "Toggle favorite",
+      "Lieblingsbilder": "Favorites",
+      "Neues Pfauenbild": "New peacock image",
+      "Noch keine Bilder — lade das erste Pfauenfoto hoch.": "No images yet — upload your first peacock photo.",
+      "Noch ohne Bewertung": "Not yet rated",
+      "Pfauenart": "Peacock species",
+      "Stand": "As of",
+      "Zuletzt dabei: {0}. Lieblingsbilder: {1}.": "Latest: {0}. Favorites: {1}.",
+      "Zuletzt dabei: {0}. Markiere ein Bild mit dem Herz als Lieblingsbild.": "Latest: {0}. Mark an image with the heart as a favorite.",
+      "{0} Bilder, neueste zuerst": "{0} images, newest first",
+      "{0} von {1} Bildern": "{0} of {1} images",
+      "{0} — Markierung entfernt": "{0} — mark removed",
+      "{0} — als Lieblingsbild markiert": "{0} — marked as favorite"
+    }
+  },
+  "v": 1
+}

@@ -1,0 +1,12 @@
+{
+  "entities": {
+    "Pfauenbilder": {
+      "placeholders_set": 5,
+      "defaults_keys": [
+        "aufnahmedatum"
+      ],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten einer Bildergalerie ohne numerische Felder, daher keine Formeln."
+    }
+  }
+}
